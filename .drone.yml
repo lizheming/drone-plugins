@@ -16,5 +16,5 @@ steps:
       password:
         from_secret: dh_pass
       repo: lizheming/drone-electron-packager
-      dockerfile: Dockerfile
+      dockerfile: electron-packager/Dockerfile
       context: electron-packager
