@@ -18,7 +18,3 @@ steps:
       repo: lizheming/drone-electron-packager
       dockerfile: Dockerfile
       context: electron-packager
-  
-trigger:
-  ref:
-    - refs/tags/electron-packager*
