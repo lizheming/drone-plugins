@@ -6,7 +6,7 @@ steps:
   - name: tagging
     image: alpine
     commands:
-      - echo -n "${DRONE_COMMIT_REF},latest" | awk -F "-v" '{print $NF}' > .tags
+      - echo -n "latest" | awk -F "-v" '{print $NF}' > .tags
   - name: Build electron-packager
     image: plugins/docker
     settings:
